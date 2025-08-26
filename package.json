@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@distube/ytdl-core": "^4.16.12"
+  }
+}
