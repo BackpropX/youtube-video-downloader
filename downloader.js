@@ -61,4 +61,4 @@ async function downloadVideo(url) {
 }
 
 // Example usage
-downloadVideo("https://www.youtube.com/watch?v=RYqJ5w-GrfM&list=RDOHJpknokAyM&index=2");
+downloadVideo("Youtube Video URL");
