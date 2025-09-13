@@ -12,15 +12,13 @@ async function downloadVideo(url) {
 
     console.log("Downloading video and audio streams...");
 
-    // Download video (highest quality)
+    
     const video = ytdl(url, { quality: 'highestvideo' })
         .pipe(createWriteStream(videoFile));
 
-    // Download audio (highest quality)
     const audio = ytdl(url, { quality: 'highestaudio' })
         .pipe(createWriteStream(audioFile));
 
-    // Wait until both downloads are finished
     await Promise.all([
         new Promise(resolve => video.on('finish', resolve)),
         new Promise(resolve => audio.on('finish', resolve))
@@ -28,14 +26,13 @@ async function downloadVideo(url) {
 
     console.log("Merging video and audio with ffmpeg...");
 
-    // Merge video + audio using ffmpeg with AAC fix
     await new Promise((resolve, reject) => {
         const ffmpeg = spawn('ffmpeg', [
             '-i', videoFile,
             '-i', audioFile,
-            '-c:v', 'copy',   // copy video stream
-            '-c:a', 'aac',    // convert audio to AAC
-            '-b:a', '192k',   // good audio quality
+            '-c:v', 'copy',   
+            '-c:a', 'aac',    
+            '-b:a', '192k',   
             outputFile
         ]);
 
@@ -60,5 +57,4 @@ async function downloadVideo(url) {
     });
 }
 
-// Example usage
-downloadVideo("Youtube Video URL");
+downloadVideo("Paste your Youtube Video link here");
