@@ -1,5 +1,7 @@
-node_modules/
+node_modules
 
 downloads/*
 
 !downloads/.gitkeep
+
+package-lock.json
