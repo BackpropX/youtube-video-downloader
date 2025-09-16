@@ -9,12 +9,12 @@ A simple tool to download video or audio from YouTube directly from your termina
 
 ## Installation
 
-1. **Clone the repository and install dependencies:**
+1. **Clone the repository:**
     ```bash
     git clone https://github.com/BackpropX/youtube-video-downloader.git
     ```
 
-2. **Install Dependencies**
+2. **Install Dependencies:**
     ```bash
     cd youtube-video-downloader
     npm install
