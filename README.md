@@ -6,13 +6,16 @@ A simple tool to download video or audio from YouTube directly from your termina
 
 - [Node.js](https://nodejs.org/) (version 14 or higher)
 
-That's it!.
 
 ## Installation
 
 1. **Clone the repository and install dependencies:**
     ```bash
-    git clone https://github.com/yourusername/youtube-video-downloader.git
+    git clone https://github.com/BackpropX/youtube-video-downloader.git
+    ```
+
+2. **Install Dependencies**
+    ```bash
     cd youtube-video-downloader
     npm install
     ```
