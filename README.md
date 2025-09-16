@@ -14,11 +14,6 @@ That's it!.
     ```bash
     git clone https://github.com/yourusername/youtube-video-downloader.git
     cd youtube-video-downloader
-    ```
-
-2.  **Install Dependencies**
-    Open your terminal in the project's root directory and run:
-    ```bash
     npm install
     ```
     *(This step might take a bit longer as it's downloading a ~70MB FFmpeg file).*
